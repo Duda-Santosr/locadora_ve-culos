@@ -191,7 +191,7 @@
                                     <td>FEM3L18</td>
                                     <td>
                                         <span class="badge bg-warning">
-                                            Indisponível
+                                            Alugado
                                         </span>
                                     </td>
                                     <td>
@@ -206,6 +206,10 @@
 
                                               <!-- Veículo Alugado -->
                                                <button class="btn btn-warning btn-sm" type="submit" name="devolver">Devolver</button>
+
+                                                <!-- Veículo Disponível -->
+                                               <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                <button class="btn btn-primary" name="alugar" type="submit">Alugar</button>
                                               </div>
                                             </form>
                                         </div>
