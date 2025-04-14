@@ -5,17 +5,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADM - Locadora de veículos</title>
-  <!-- Link do bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Link dos ícones -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- CSS Interno -->
-  <style></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM - Locadora de veículos</title>
+    <!-- link do css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  
 </head>
 <body class="container py-4">
     <div class="container py-4">
@@ -164,7 +164,82 @@
                                     </td>
                                     <td>
                                         <div class="action-wrapper">
-                                            
+                                            <form action="post" class="btn-group-actions">
+
+                                            <!-- Botão Deletar (sempre disponível para o adm) -->
+                                             <button class="btn btn-danger btn-sm delete-btn" type="submit" name="deletar">Deletar</button>
+
+                                             <!-- Botões Condicionais -->
+                                              <div class="rent-group">
+
+                                              <!-- Veículo Alugado -->
+                                               <button class="btn btn-warning btn-sm" type="submit" name="devolver">Devolver</button>
+
+                                               <!-- Veículo Disponível -->
+                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                <button class="btn btn-primary" name="alugar" type="submit">Alugar</button>
+                                              </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>Moto</td>
+                                    <td>Kawasaki Ninja</td>
+                                    <td>FEM3L18</td>
+                                    <td>
+                                        <span class="badge bg-warning">
+                                            Indisponível
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="action-wrapper">
+                                            <form action="post" class="btn-group-actions">
+
+                                            <!-- Botão Deletar (sempre disponível para o adm) -->
+                                             <button class="btn btn-danger btn-sm delete-btn" type="submit" name="deletar">Deletar</button>
+
+                                             <!-- Botões Condicionais -->
+                                              <div class="rent-group">
+
+                                              <!-- Veículo Alugado -->
+                                               <button class="btn btn-warning btn-sm" type="submit" name="devolver">Devolver</button>
+                                              </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>Caminhão</td>
+                                    <td>Truck</td>
+                                    <td>DUD2A17</td>
+                                    <td>
+                                        <span class="badge bg-success">
+                                            Disponível
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="action-wrapper">
+                                            <form action="post" class="btn-group-actions">
+
+                                            <!-- Botão Deletar (sempre disponível para o adm) -->
+                                             <button class="btn btn-danger btn-sm delete-btn" type="submit" name="deletar">Deletar</button>
+
+                                             <!-- Botões Condicionais -->
+                                              <div class="rent-group">
+
+                                              <!-- Veículo Alugado -->
+                                               <button class="btn btn-warning btn-sm" type="submit" name="devolver">Devolver</button>
+
+                                               <!-- Veículo Disponível -->
+                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                <button class="btn btn-primary" name="alugar" type="submit">Alugar</button>
+                                              </div>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>
@@ -180,3 +255,4 @@
   
 </body>
 </html>
+
