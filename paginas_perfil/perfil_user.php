@@ -101,7 +101,7 @@
                             <tbody>
                                 <tr>
                                     <td>Carro</td>
-                                    <td>Uno</td>
+                                    <td><span><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" >Uno</button></span></td>
                                     <td>ABC1D34</td>
                                     <td>
                                         <span class="badge bg-success">
@@ -128,7 +128,7 @@
                                     <td>Truck</td>
                                     <td>DUD2A17</td>
                                     <td>
-                                        <span class="badge bg-success">
+                                        <span class="badge bg-success" onclick="togglePassword()">
                                             Disponível
                                         </span>
                                     </td>
@@ -142,6 +142,23 @@
      </div>
 
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carro Uno</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      O Fiat Uno é um carro compacto lançado pela montadora italiana Fiat em 1983. Conhecido por sua economia de combustível, manutenção simples e bom custo-benefício, ele se tornou muito popular no Brasil, onde foi fabricado por décadas. O modelo passou por diversas atualizações ao longo dos anos, incluindo a reestilização que gerou o "Novo Uno" em 2010. A produção do Uno foi encerrada no Brasil em 2021, marcando o fim de uma era para um dos carros mais icônicos do país.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   
 </body>
 </html>
