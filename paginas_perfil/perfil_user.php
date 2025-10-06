@@ -61,8 +61,6 @@
                             required>
                                 <option value="carro">Carro</option>
                                 <option value="moto">Moto</option>
-                                <option value="caminhao">Caminhão</option>
-                                <option value="aviao">Avião</option>
                             </select>
                         </div>
 
@@ -124,7 +122,7 @@
                             </tbody>
                             <tbody>
                                 <tr>
-                                    <td>Caminhão</td>
+                                    <td>Carro</td>
                                     <td>Truck</td>
                                     <td>DUD2A17</td>
                                     <td>

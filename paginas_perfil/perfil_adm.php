@@ -114,8 +114,6 @@
                             required>
                                 <option value="carro">Carro</option>
                                 <option value="moto">Moto</option>
-                                <option value="caminhao">Caminhão</option>
-                                <option value="aviao">Avião</option>
                             </select>
                         </div>
 
@@ -146,11 +144,13 @@
                     <div class="table-responsive">
                         <table class="table table-striped table-hover">
                             <thead>
-                                <th>Tipo</th>
-                                <th>Modelo</th>
-                                <th>Placa</th>
-                                <th>Status</th>
-                                <th>Ações</th>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Modelo</th>
+                                    <th>Placa</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -218,7 +218,7 @@
                             </tbody>
                             <tbody>
                                 <tr>
-                                    <td>Caminhão</td>
+                                    <td>Carro</td>
                                     <td>Truck</td>
                                     <td>DUD2A17</td>
                                     <td>
